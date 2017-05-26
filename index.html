@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>扑克</title>
+<script src="jquery-1.12.4.js"></script>
+<script src="puke.js"></script>
+
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	body{
+		background: url(imgs/bigbg.jpg)no-repeat center;
+	}
+	.zhuomian{
+		width: 700px;
+		height: 600px;
+		margin: 40px auto 0;
+		position: relative;
+	}
+	.zhuomian .move_right,.zhuomian .move_left{
+		padding:10px 50px;
+		color: #fff;
+		font-size: 20px;
+		position: absolute;
+		left: 300px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	.zhuomian .move_left{
+		bottom: 10px;
+		background: pink;
+	}
+	.zhuomian .move_right{
+		bottom: 80px;
+		background:yellow;
+	}
+	.zhuomian .pai{
+		width: 90px;
+		height: 130px;
+		background-size: 90px 130px;
+		position: absolute;
+		top: 0;
+		left: 300px;
+		opacity: 0;
+	}
+	.zhuomian .pai.active{
+		box-shadow: 0 0 0 5px pink;
+	}
+</style>
+<body>
+	<div class="zhuomian">
+		<div class="move_right">&gt;</div>
+		<div class="move_left">&lt;</div>
+	</div>
+</body>
+</html>
